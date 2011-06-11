@@ -1,3 +1,4 @@
-
+.DS_STORE?
+Thumbs.db
 *.ini
 git-deploy
