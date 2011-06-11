@@ -50,12 +50,16 @@ $charset = strtolower(get_bloginfo('charset'));
 <!-- CSS: implied media="all" -->
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 
+<<<<<<< HEAD
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
 <!-- More ideas for your <head> here: h5bp.com/docs/#head-Tips -->
 
 <?php wp_head(); ?>
+=======
+  <?php wp_head(); ?>
+>>>>>>> 51aaff126b1b651a344c27e0fc0ca2664d147f33
 </head>
 
 <body <?php body_class(); ?>>
