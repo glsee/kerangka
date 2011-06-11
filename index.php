@@ -55,12 +55,6 @@ $charset = strtolower(get_bloginfo('charset'));
 
   <!-- More ideas for your <head> here: h5bp.com/docs/#head-Tips -->
 
-  <!-- All JavaScript at the bottom, except for Modernizr and Respond.
-       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
-       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/libs/modernizr-2.0.min.js"></script>
-  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/libs/respond.min.js"></script>
-
   <?php wp_head(); ?>
 </head>
 
