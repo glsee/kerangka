@@ -12,7 +12,8 @@ function my_enqueue_scripts() {
 	
 	/* Although HTML5 Boilerplate suggests to have jQuery before the end of body, too many WordPress features/plugins depend on it.
 	   Put it before the end of head to be safe. */
-	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js');	
+	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js');
+	//wp_enqueue_script( 'jquery' );
 	
   /* scripts concatenated and minified via ant build script */
 	wp_enqueue_script( 'my_plugins', get_bloginfo('stylesheet_directory').'/js/plugins.js', array(), false, true /* in_footer */ );
