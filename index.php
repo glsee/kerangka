@@ -34,7 +34,7 @@
 
 <body>
 
-  <div id="container">
+  <div class="container">
     <header>
 
     </header>
@@ -44,7 +44,7 @@
     <footer>
 
     </footer>
-  </div> <!--! end of #container -->
+  </div> <!--! end of .container -->
 
 
   <!-- JavaScript at the bottom for fast page loading -->
