@@ -48,7 +48,10 @@ $charset = strtolower(get_bloginfo('charset'));
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <!-- CSS: implied media="all" -->
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
+  <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+  
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
   <!-- More ideas for your <head> here: h5bp.com/docs/#head-Tips -->
 
@@ -57,19 +60,32 @@ $charset = strtolower(get_bloginfo('charset'));
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/libs/modernizr-2.0.min.js"></script>
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/libs/respond.min.js"></script>
+
+  <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
   <div class="container">
     <header>
-
+      <hgroup>
+        <h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+        <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+      </hgroup>
+      <nav id="access" role="navigation">
+        <h1 class="section-heading visuallyhidden">Main menu</h1>
+        <div class="skip-link visuallyhidden"><a href="#content" title="Skip to content">Skip to content</a></div>
+        
+        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+      </nav><!-- #access -->
     </header>
+    
     <div id="main" role="main">
-
+      
     </div>
+    
     <footer>
-
+      <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
     </footer>
   </div> <!--! end of .container -->
 
@@ -95,5 +111,6 @@ $charset = strtolower(get_bloginfo('charset'));
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
 
+  <?php wp_footer(); ?>
 </body>
 </html>
