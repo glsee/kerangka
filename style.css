@@ -1,0 +1,18 @@
+/*
+Theme Name: Kerangka
+Theme URI: http://see.guol.in/
+Description: A WordPress theme filled with minimal default styling. Contains the goodness of best practice on web from HTML5 Boilerplate, responsive web layout from Skeleton CSS framework, and normalized styling across various browsers from normalize.css.
+Author: Guo Lin
+Author URI: http://see.guol.in/
+Version: 0.1
+Tags: baseline
+
+License: GPL 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+
+
+*/
+
+@import url('css/normalize.css');
+@import url('css/skeleton.css');
+@import url('css/layout.css');
