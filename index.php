@@ -1,3 +1,4 @@
+<!-- header starts here -->
 <!doctype html>
 <?php
 $lang = get_bloginfo('language');
@@ -75,6 +76,9 @@ $charset = strtolower(get_bloginfo('charset'));
 	</header>
 	
 	<div id="main" role="main">
+<!-- header ends here -->
+	
+<!-- index starts here -->
 		<div id="content">
 			<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 				<div id="nav-above" class="navigation">
@@ -250,6 +254,9 @@ $charset = strtolower(get_bloginfo('charset'));
 			<?php endif; ?>
 			
 		</div><!-- #content -->
+<!-- index ends here -->
+		
+<!-- sidebar starts here -->
 		<aside>
 			<div id="primary" class="widget-area" role="complementary">
 				<ul class="xoxo">
@@ -288,6 +295,9 @@ $charset = strtolower(get_bloginfo('charset'));
 				</ul>
 			</div><!-- #primary .widget-area -->
 		</aside><!-- aside -->
+<!-- sidebar ends here -->
+		
+<!-- footer starts here -->
 	</div><!-- #main -->
 	
 	<footer>
@@ -298,3 +308,4 @@ $charset = strtolower(get_bloginfo('charset'));
 <?php wp_footer(); ?>
 </body>
 </html>
+<!-- footer ends here -->
