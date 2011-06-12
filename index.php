@@ -258,7 +258,7 @@ $charset = strtolower(get_bloginfo('charset'));
 		
 <!-- sidebar starts here -->
 		<aside>
-			<div id="primary" class="widget-area" role="complementary">
+			<div class="widget-area" role="complementary">
 				<ul class="xoxo">
 				
 
@@ -293,7 +293,7 @@ $charset = strtolower(get_bloginfo('charset'));
 				<?php endif; // end primary widget area ?>
 				
 				</ul>
-			</div><!-- #primary .widget-area -->
+			</div><!-- .widget-area -->
 		</aside><!-- aside -->
 <!-- sidebar ends here -->
 		
