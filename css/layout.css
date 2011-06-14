@@ -27,6 +27,7 @@
 
 /* =Menu */
 #access {
+	background: #000;
 	display: block;
 	float: left;
 	margin: 0 auto;
@@ -49,6 +50,7 @@ div.menu li {
 	position: relative;
 }
 #access a {
+	color: #aaa;
 	display: block;
 	line-height: 38px;
 	padding: 0 10px;
