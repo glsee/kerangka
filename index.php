@@ -71,7 +71,7 @@ $charset = strtolower(get_bloginfo('charset'));
 			<h1 class="section-heading visuallyhidden">Main menu</h1>
 			<div class="skip-link visuallyhidden"><a href="#content" title="Skip to content">Skip to content</a></div>
 			
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu-{menu slug}-container menu', 'menu_class' => '') ); ?>
 		</nav><!-- #access -->
 	</header>
 	
@@ -301,7 +301,7 @@ $charset = strtolower(get_bloginfo('charset'));
 	</div><!-- #main -->
 	
 	<footer>
-	<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+	<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container_class' => 'menu-{menu slug}-container menu', 'menu_class' => '', 'depth' => 1 ) ); ?>
 	</footer>
 </div> <!--! end of .container -->
 
