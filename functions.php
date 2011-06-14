@@ -2,6 +2,8 @@
 
 /* enable theme capability */
 add_theme_support( 'menus' );
+register_nav_menu( 'primary', 'Primary menu near the top of the webpages' );
+register_nav_menu( 'footer', 'Footer menu near the bottom of the webpages' );
 // add_theme_support( 'post-thumbnails' );
 // set_post_thumbnail_size( 50, 50, true );
 
