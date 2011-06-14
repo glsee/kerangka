@@ -1,5 +1,10 @@
 <?php
 
+/* enable theme capability */
+add_theme_support( 'menus' );
+// add_theme_support( 'post-thumbnails' );
+// set_post_thumbnail_size( 50, 50, true );
+
 add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
 
 function my_enqueue_scripts() {
