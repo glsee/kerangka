@@ -252,7 +252,10 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 		width: 160px;
 		height: auto;
 	}
-	#access li:hover > a,
+	#access li:hover > a {
+		background: #ccc;
+		color: #333;
+	}
 	#access ul ul :hover > a {
 		background: #aaa;
 		color: #333;
