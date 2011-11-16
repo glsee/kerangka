@@ -42,6 +42,7 @@ $charset = strtolower(get_bloginfo('charset'));
 <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon/apple-touch-icon-114x114-precomposed.png" />
 
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/utility.css">
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>

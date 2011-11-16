@@ -2,7 +2,7 @@
  * This is not loaded in the Kerangka.
  * It's supposed to be added after the main styling to prevent overriding.
  * Load it into your child theme in your child theme <head> with:
- * <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/utitliy.css">
+ * <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/utility.css">
  */
 
 /* =============================================================================

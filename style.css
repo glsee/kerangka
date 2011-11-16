@@ -197,7 +197,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
 	/* =Menu */
 	#access {
-		background: #000;
+		background: #eee;
 		display: block;
 		float: left;
 		margin: 0 auto;
@@ -220,7 +220,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 		position: relative;
 	}
 	#access a {
-		color: #aaa;
+		color: #555;
 		display: block;
 		line-height: 38px;
 		padding: 0 10px;
