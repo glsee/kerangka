@@ -65,7 +65,7 @@ $charset = strtolower(get_bloginfo('charset'));
 		</nav><!-- #access -->
 	</header>
 	
-	<div role="main">
+	<div id="main" role="main">
 <!-- header ends here -->
 	
 <!-- index starts here -->
@@ -287,7 +287,7 @@ $charset = strtolower(get_bloginfo('charset'));
 <!-- sidebar ends here -->
 		
 <!-- footer starts here -->
-	</div><!-- [role=main] -->
+	</div><!-- #main -->
 	
 	<footer>
 	<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container_class' => 'menu-{menu slug}-container menu', 'depth' => 1 ) ); ?>
