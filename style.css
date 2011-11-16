@@ -246,7 +246,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 		top: 0;
 	}
 	#access ul ul a {
-		background: #333;
+		background: #ccc;
 		line-height: 1em;
 		padding: 10px;
 		width: 160px;
@@ -254,8 +254,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 	}
 	#access li:hover > a,
 	#access ul ul :hover > a {
-		background: #333;
-		color: #fff;
+		background: #aaa;
+		color: #333;
 	}
 	#access ul li:hover > ul {
 		display: block;
@@ -264,14 +264,14 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 	#access ul li.current-menu-ancestor > a,
 	#access ul li.current-menu-item > a,
 	#access ul li.current-menu-parent > a {
-		color: #fff;
+		color: #333;
 	}
 	.ie6 #access ul li.current_page_item a,
 	.ie6 #access ul li.current-menu-ancestor a,
 	.ie6 #access ul li.current-menu-item a,
 	.ie6 #access ul li.current-menu-parent a,
 	.ie6 #access ul li a:hover {
-		color: #fff;
+		color: #333;
 	}
 
 
@@ -295,7 +295,13 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 		padding: 18px 20px;
 	}
 	.entry-content,
-	.entry-summary {
+	.entry-summary,
+	.entry-content h1, .entry-summary h1,
+	.entry-content h2, .entry-summary h2,
+	.entry-content h3, .entry-summary h3,
+	.entry-content h4, .entry-summary h4,
+	.entry-content h5, .entry-summary h5,
+	.entry-content h6, .entry-summary h6 {
 		clear: both;
 	}
 	.entry-content blockquote.left {
