@@ -4,16 +4,12 @@
 $lang = get_bloginfo('language');
 $charset = strtolower(get_bloginfo('charset'));
 ?>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="<?php echo $lang; ?>"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="<?php echo $lang; ?>"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="<?php echo $lang; ?>"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="<?php echo $lang; ?>"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="<?php echo $lang; ?>"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="<?php echo $lang; ?>"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<?php echo $lang; ?>"> <!--<![endif]-->
 <head>
 <meta charset="<?php echo $charset; ?>">
-
-<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-	Remove this if you use the .htaccess -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 <title><?php
@@ -38,23 +34,17 @@ $charset = strtolower(get_bloginfo('charset'));
 
 ?></title>
 
-<!-- Mobile viewport optimized: j.mp/bplateviewport -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon/favicon.ico">
 <link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon/apple-touch-icon-precomposed.png">
 <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon/apple-touch-icon-72x72-precomposed.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon/apple-touch-icon-114x114-precomposed.png" />
 
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-<!-- CSS: implied media="all" -->
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
-
-<!-- More ideas for your <head> here: h5bp.com/docs/#head-Tips -->
 
 <?php wp_head(); ?>
 </head>
@@ -75,7 +65,7 @@ $charset = strtolower(get_bloginfo('charset'));
 		</nav><!-- #access -->
 	</header>
 	
-	<div id="main" role="main">
+	<div role="main">
 <!-- header ends here -->
 	
 <!-- index starts here -->
@@ -260,7 +250,6 @@ $charset = strtolower(get_bloginfo('charset'));
 		<aside>
 			<div class="widget-area" role="complementary">
 				<ul class="xoxo">
-				
 
 				<?php
 					/* When we call the dynamic_sidebar() function, it'll spit out
@@ -298,7 +287,7 @@ $charset = strtolower(get_bloginfo('charset'));
 <!-- sidebar ends here -->
 		
 <!-- footer starts here -->
-	</div><!-- #main -->
+	</div><!-- [role=main] -->
 	
 	<footer>
 	<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container_class' => 'menu-{menu slug}-container menu', 'depth' => 1 ) ); ?>
